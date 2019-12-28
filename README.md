@@ -3,6 +3,20 @@
 ## Paper
 [Accelerated Training for Massive Classification via Dynamic Class Selection](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17244), AAAI 2018 (**Oral**)
 
+## Modification
+1. Copy dataset into `$ROOT/datasets/faces112x112`
+2. Split Training & Validation
+   - Create folder `datasets/train_val/`.
+    ```python
+     python tools/split_train_val.py --folder datasets/faces112x112/ --ofolder datasets/train_val/
+    ```
+3. Start training
+   - Edit file `scripts/train.sh` to fit your training dataset
+   - Execute that script. 
+
+## Extra references:
+- Extract .bin into `.npy` file: `python extract_feat.py -j 3 -b 64 --bin-file datasets/lfw.bin`
+- 
 
 ## Training
 1. Install [PyTorch](http://pytorch.org/). (Better to install the latest master from source)

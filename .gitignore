@@ -9,6 +9,11 @@
 
 # Ignore Important Folders
 resources/
+datasets/part0_train.bin
+datasets/faces112x112/
+datasets/hasil/
+datasets/anotherfaces/
+datasets/mlsp_faces/
 
 # Ignore Python 3 Environment
 penv/
