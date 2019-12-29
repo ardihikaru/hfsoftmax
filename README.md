@@ -14,11 +14,14 @@
 3. Split Training & Validation
    - Create folder `data/train_val/`.
     ```python
-     python tools/split_train_val.py --folder data/faces112x112/ --ofolder data/train_val/
+     python tools/split_train_val.py --folder data/mlsp_dataset_int/faces112x112/ --ofolder data/train_val/
     ```
 4. Start training
    - Edit file `scripts/train.sh` to fit your training dataset
-   - Execute that script. 
+   - Execute that script.
+     ```python
+     python scripts/train.sh data
+     ``` 
 
 ## Extra references:
 - Extract .bin into `.npy` file: `python extract_feat.py -j 3 -b 64 --bin-file datasets/lfw.bin`
