@@ -10,6 +10,11 @@
      - CPU:
        - `$ pip install mxnet`
        - `$ pip install mxnet-mkl`
+   - tensorflow
+     - GPU: `$ pip install tensorflow-gpu==1.14 `
+     - CPU: `$ pip install tensorflow==1.14 `
+   - rest of important dep:
+     `$ pip install tensorboardX annoy nmslib easydict opencv-python`
 2. Copy dataset into `$ROOT/data/faces112x112`
 3. Split Training & Validation
    - Create folder `data/train_val/`.
@@ -20,7 +25,7 @@
    - Edit file `scripts/train.sh` to fit your training dataset
    - Execute that script.
      ```python
-     python scripts/train.sh data
+     sh scripts/train.sh data
      ``` 
 
 ## Extra references:

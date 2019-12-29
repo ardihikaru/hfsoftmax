@@ -7,10 +7,10 @@ num_classes=25
 #GPU=0,1,2,3
 GPU=0
 
+#    -b 1024 \
 
 CUDA_VISIBLE_DEVICES=$GPU python train.py \
     -a 'hynet' \
-    -b 1024 \
     --lr 0.5 \
     --num-classes $num_classes \
     --train-filelist $dataset_path/train_val/train.txt \
