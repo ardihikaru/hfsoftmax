@@ -4,13 +4,19 @@
 [Accelerated Training for Massive Classification via Dynamic Class Selection](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17244), AAAI 2018 (**Oral**)
 
 ## Modification
-1. Copy dataset into `$ROOT/datasets/faces112x112`
-2. Split Training & Validation
-   - Create folder `datasets/train_val/`.
+1. Install dependencies:
+   - mxnet: 
+     - GPU: `$ pip install mxnet-cu101`
+     - CPU:
+       - `$ pip install mxnet`
+       - `$ pip install mxnet-mkl`
+2. Copy dataset into `$ROOT/data/faces112x112`
+3. Split Training & Validation
+   - Create folder `data/train_val/`.
     ```python
-     python tools/split_train_val.py --folder datasets/faces112x112/ --ofolder datasets/train_val/
+     python tools/split_train_val.py --folder data/faces112x112/ --ofolder data/train_val/
     ```
-3. Start training
+4. Start training
    - Edit file `scripts/train.sh` to fit your training dataset
    - Execute that script. 
 
