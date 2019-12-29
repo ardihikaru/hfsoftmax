@@ -1,6 +1,7 @@
 #!/bin/bash
 
-dataset_path=$1
+#dataset_path=$1
+dataset_path="data"
 #num_classes=85164
 num_classes=25
 #GPU=0,1,2,3
